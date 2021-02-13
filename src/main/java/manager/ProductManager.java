@@ -10,7 +10,7 @@ public class ProductManager {
 
     private ProductRepository repository;
 
-    ProductManager(ProductRepository repository){
+    public ProductManager(ProductRepository repository){
         this.repository=repository;
     }
 
