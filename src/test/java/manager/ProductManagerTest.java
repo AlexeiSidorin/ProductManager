@@ -23,6 +23,12 @@ class ProductManagerTest {
         assertArrayEquals(expected, actual);
     }
 
+    @Test
+    void shouldSearchByBookAuthor() {
+        Product[] expected = {new Book(5, "Fiesta", 200, "Hemingway")};
+        Product[] actual = manager.searchBy("Hemingway");
+        assertArrayEquals(expected, actual);
+    }
 
     @Test
     void shouldSearchBySmartPhoneName() {
@@ -31,6 +37,12 @@ class ProductManagerTest {
         assertArrayEquals(expected, actual);
     }
 
+    @Test
+    void shouldSearchBySmartPhoneMadeIn() {
+        Product[] expected = {new Smartphone(2, "Nokia", 200, "Euro")};
+        Product[] actual = manager.searchBy("Euro");
+        assertArrayEquals(expected, actual);
+    }
 
     @Test
     void shouldSearchByNull() {
