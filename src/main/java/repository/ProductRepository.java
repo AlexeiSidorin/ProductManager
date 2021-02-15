@@ -12,7 +12,9 @@ public class ProductRepository {
             new Smartphone(2, "Nokia", 200, "Euro"),
             new Smartphone(3, "LG", 300, "USA"),
             new Book(4, "Faust", 200, "Goethe"),
-            new Book(5, "Fiesta", 200, "Hemingway")
+            new Book(5, "Fiesta", 200, "Hemingway"),
+            new Book(6, "War and piece", 200, "Tolstoy"),
+            new Book(7, "War and piece", 200, "Tolstoy")
 
 
     };
@@ -31,7 +33,6 @@ public class ProductRepository {
 
 
     public Product[] findAll(){
-
         return items;
     }
 
